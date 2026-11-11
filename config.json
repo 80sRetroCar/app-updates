@@ -1,0 +1,66 @@
+{
+  "apps": [
+    {
+      "id": "valiant-arcade",
+      "name": "Valiant Arcade",
+      "folder_code": "kZ5hWjJZngIhJQd8nwBUu3wMHQ3e4zSo0YuV",
+      "file_codes": [
+        "XZP3cuJZgOcxc8kFqPmhr4z3Jsyj2brWMwcV"
+      ]
+    },
+    {
+      "id": "retro-notes",
+      "name": "Retro Notes",
+      "folder_code": "kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V",
+      "file_codes": [
+        "XZfXouJZOQ9KlBNz5FBTytd7l33BS84VgVt7",
+        "XZkrcuJZ961EWLxAGjbaco8c22ibd7UVhKrX"
+      ]
+    },
+    {
+      "id": "retrodrop",
+      "name": "RetroDrop",
+      "folder_code": "kZaA2jJZucSM9dWv5CmU27V4kAzIAJIGBFrV",
+      "file_codes": [
+        "XZe4UjJZ1TVjqEYeLQROkHvUfUWn0JGMamJ7",
+        "XZmGyjJZatkSA7834D5uT7zLo626FbwSpnkV"
+      ]
+    },
+    {
+      "id": "retrolevel",
+      "name": "RetroLevel",
+      "folder_code": "kZBwxjJZkB3tQjaYDtbxM0vyN89sbB8zWJak",
+      "file_codes": [
+        "XZfvcuJZePMam08qbp4bT506p7bzoYSckJNX"
+      ]
+    },
+    {
+      "id": "retro-grid",
+      "name": "Retro Grid",
+      "folder_names": ["Retro Grid", "RetroGrid"],
+      "file_codes": [
+        "XZvccuJZCDiEgjrPc8pmLRtwcLd95S6wdQY7",
+        "XZercuJZo5BICc3DLVmy8jgA36AkQp9zMt6k"
+      ]
+    },
+    {
+      "id": "retroride",
+      "name": "RetroRide",
+      "folder_names": ["RetroRide", "Retro Ride"],
+      "file_codes": [
+        "XZTFouJZOoi3fukvIn5gk2UXeHBufjzB74dy"
+      ]
+    },
+    {
+      "id": "80s-retro-car-games",
+      "name": "80s Retro Car Games",
+      "aliases": ["zombie-smash", "neon-maze"],
+      "direct": {
+        "android": {
+          "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
+          "filename": "80sRetroCarGames.apk"
+        }
+      }
+    }
+  ]
+}

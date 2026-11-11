@@ -1,0 +1,146 @@
+{
+  "generated": "2026-11-11T22:42:12Z",
+  "apps": {
+    "valiant-arcade": {
+      "name": "Valiant Arcade",
+      "android": {
+        "version": "2.6.17",
+        "url": "https://u.pcloud.link/publink/show?code=XZP3cuJZgOcxc8kFqPmhr4z3Jsyj2brWMwcV",
+        "updated": "2026-11-11T20:32:52Z",
+        "filename": "ValiantArcade.apk",
+        "size": 18622713,
+        "version_source": "apk_manifest",
+        "url_source": "file_publink"
+      },
+      "folder_url": "https://u.pcloud.link/publink/show?code=kZ5hWjJZngIhJQd8nwBUu3wMHQ3e4zSo0YuV"
+    },
+    "retro-notes": {
+      "name": "Retro Notes",
+      "android": {
+        "version": "2.2.2",
+        "url": "https://u.pcloud.link/publink/show?code=XZkrcuJZ961EWLxAGjbaco8c22ibd7UVhKrX",
+        "updated": "2026-11-11T21:04:18Z",
+        "filename": "RetroNotes-v2.2.2.apk",
+        "size": 260947,
+        "version_source": "filename",
+        "url_source": "file_publink"
+      },
+      "windows": {
+        "version": "2.4.1",
+        "url": "https://u.pcloud.link/publink/show?code=XZfXouJZOQ9KlBNz5FBTytd7l33BS84VgVt7",
+        "updated": "2026-11-11T22:03:01Z",
+        "filename": "RetroNotes-Windows-v2.4.1.exe",
+        "size": 12535808,
+        "version_source": "filename",
+        "url_source": "file_publink"
+      },
+      "folder_url": "https://u.pcloud.link/publink/show?code=kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V"
+    },
+    "retrodrop": {
+      "name": "RetroDrop",
+      "android": {
+        "version": "1.2.1-build4",
+        "url": "https://u.pcloud.link/publink/show?code=XZe4UjJZ1TVjqEYeLQROkHvUfUWn0JGMamJ7",
+        "updated": "2026-11-02T03:32:28Z",
+        "filename": "RetroDrop-v1.2.1-build4.apk",
+        "size": 53813,
+        "version_source": "filename",
+        "url_source": "file_publink"
+      },
+      "windows": {
+        "version": "1.1.1",
+        "url": "https://u.pcloud.link/publink/show?code=XZmGyjJZatkSA7834D5uT7zLo626FbwSpnkV",
+        "updated": "2026-11-02T20:15:17Z",
+        "filename": "RetroDrop-Windows-v1.1.1.exe",
+        "size": 298496,
+        "version_source": "filename",
+        "url_source": "file_publink"
+      },
+      "folder_url": "https://u.pcloud.link/publink/show?code=kZaA2jJZucSM9dWv5CmU27V4kAzIAJIGBFrV"
+    },
+    "retrolevel": {
+      "name": "RetroLevel",
+      "android": {
+        "version": "1.1.7",
+        "url": "https://u.pcloud.link/publink/show?code=XZfvcuJZePMam08qbp4bT506p7bzoYSckJNX",
+        "updated": "2026-11-11T20:47:27Z",
+        "filename": "RetroLevel-v1.1.7.apk",
+        "size": 101377,
+        "version_source": "filename",
+        "url_source": "file_publink"
+      },
+      "folder_url": "https://u.pcloud.link/publink/show?code=kZBwxjJZkB3tQjaYDtbxM0vyN89sbB8zWJak"
+    },
+    "retro-grid": {
+      "name": "Retro Grid",
+      "android": {
+        "version": "2.3",
+        "url": "https://u.pcloud.link/publink/show?code=XZercuJZo5BICc3DLVmy8jgA36AkQp9zMt6k",
+        "updated": "2026-11-11T21:09:22Z",
+        "filename": "RetroGrid-v2.3.apk",
+        "size": 4563816,
+        "version_source": "filename",
+        "url_source": "file_publink"
+      },
+      "windows": {
+        "version": "2.3",
+        "url": "https://u.pcloud.link/publink/show?code=XZvccuJZCDiEgjrPc8pmLRtwcLd95S6wdQY7",
+        "updated": "2026-11-11T21:15:47Z",
+        "filename": "RetroGrid-Windows-v2.3-Setup.exe",
+        "size": 75963525,
+        "version_source": "filename",
+        "url_source": "file_publink"
+      }
+    },
+    "retroride": {
+      "name": "RetroRide",
+      "android": {
+        "version": "1.0.3",
+        "url": "https://u.pcloud.link/publink/show?code=XZTFouJZOoi3fukvIn5gk2UXeHBufjzB74dy",
+        "updated": "2026-11-11T22:29:39Z",
+        "filename": "RetroRide-v1.0.3.apk",
+        "size": 205329,
+        "version_source": "filename",
+        "url_source": "file_publink"
+      }
+    },
+    "80s-retro-car-games": {
+      "name": "80s Retro Car Games",
+      "android": {
+        "version": "1.22",
+        "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
+        "updated": "2026-11-08T00:27:09Z",
+        "filename": "80sRetroCarGames.apk",
+        "size": 7558300,
+        "version_source": "apk_manifest",
+        "url_source": "direct"
+      }
+    },
+    "zombie-smash": {
+      "name": "Zombie Smash",
+      "android": {
+        "version": "1.22",
+        "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
+        "updated": "2026-11-08T00:27:09Z",
+        "filename": "80sRetroCarGames.apk",
+        "size": 7558300,
+        "version_source": "apk_manifest",
+        "url_source": "direct"
+      },
+      "shared_with": "80s-retro-car-games"
+    },
+    "neon-maze": {
+      "name": "Neon Maze",
+      "android": {
+        "version": "1.22",
+        "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
+        "updated": "2026-11-08T00:27:09Z",
+        "filename": "80sRetroCarGames.apk",
+        "size": 7558300,
+        "version_source": "apk_manifest",
+        "url_source": "direct"
+      },
+      "shared_with": "80s-retro-car-games"
+    }
+  }
+}
