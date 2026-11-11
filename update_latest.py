@@ -355,9 +355,15 @@ def pick_newest(files: list[dict[str, Any]]) -> dict[str, Any] | None:
         return None
 
     def key(item: dict[str, Any]) -> tuple:
-        iso = to_iso(item.get("modified")) or ""
         ver = parse_version_from_filename(item.get("name") or "") or ""
-        return (iso, parse_semver(ver), int(item.get("size") or 0))
+        iso = to_iso(item.get("modified")) or ""
+        # Version in the filename wins; fall back to modified time, then size.
+        return (
+            1 if ver else 0,
+            parse_semver(ver) if ver else (0,),
+            iso,
+            int(item.get("size") or 0),
+        )
 
     return max(files, key=key)
 
@@ -408,6 +414,39 @@ def merge_files(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     if not prev.get(key) and item.get(key):
                         prev[key] = item[key]
     return list(by_id.values()) + extras
+
+
+def attach_valid_file_codes(
+    folder_files: list[dict[str, Any]],
+    file_pkgs: list[dict[str, Any]],
+    pcloud: "PCloud",
+    extra_codes: list[str],
+) -> list[dict[str, Any]]:
+    """Copy still-valid file publink codes onto the matching folder file only."""
+    by_id: dict[Any, dict[str, Any]] = {}
+    by_name: dict[str, dict[str, Any]] = {}
+    for item in file_pkgs:
+        if not item.get("code"):
+            continue
+        if item.get("fileid") is not None:
+            by_id[item["fileid"]] = item
+        name = item.get("name") or ""
+        if name:
+            by_name[name] = item
+    for pkg in folder_files:
+        code = pkg.get("code")
+        fid = pkg.get("fileid")
+        if not code and fid is not None and fid in by_id:
+            code = by_id[fid]["code"]
+        if not code and fid is not None:
+            code = pcloud.code_for_fileid(fid, extra_codes)
+        if not code:
+            cand = by_name.get(pkg.get("name") or "")
+            if cand and (fid is None or cand.get("fileid") in (None, fid)):
+                code = cand["code"]
+        if code:
+            pkg["code"] = code
+    return folder_files
 
 
 def previous_platform(prev: dict[str, Any] | None, app_id: str, platform: str) -> dict[str, Any] | None:
@@ -478,6 +517,9 @@ def build_platform_entry(
     if not code and fileid is not None:
         code = pcloud.ensure_file_publink(fileid)
 
+    # getpublinkdownload URLs include an expires timestamp (typically hours),
+    # so they are never stored in latest.json. A still-valid file publink page
+    # is best; otherwise the folder publink page, which stays stable.
     if direct_url:
         url = direct_url
         url_source = "direct"
@@ -566,6 +608,7 @@ def process_app(app: dict[str, Any], pcloud: PCloud, prev: dict[str, Any] | None
             log(f"{name}: discovered folder publink via API")
 
     packages: list[dict[str, Any]] = []
+    folder_ok = False
     if folder_code:
         try:
             shown = show_publink(folder_code)
@@ -574,18 +617,22 @@ def process_app(app: dict[str, Any], pcloud: PCloud, prev: dict[str, Any] | None
                 for f in walk_files(shown.get("metadata") or {})
                 if is_android(f["name"]) or is_windows(f["name"])
             )
+            folder_ok = True
         except Exception as exc:  # noqa: BLE001
             log(f"{name}: folder {folder_code} failed: {exc}")
 
-    if file_codes:
-        packages = merge_files(packages, resolve_file_codes(file_codes))
-
-    # Attach existing file publink codes found via listpublinks.
-    for pkg in packages:
-        if not pkg.get("code") and pkg.get("fileid") is not None:
-            found = pcloud.code_for_fileid(pkg["fileid"], file_codes)
-            if found:
-                pkg["code"] = found
+    file_pkgs = resolve_file_codes(file_codes) if file_codes else []
+    if folder_ok:
+        # Newest version is chosen from the folder listing only. File codes
+        # supply a download URL when they still point at that exact file.
+        packages = attach_valid_file_codes(packages, file_pkgs, pcloud, file_codes)
+    else:
+        packages = merge_files(packages, file_pkgs)
+        for pkg in packages:
+            if not pkg.get("code") and pkg.get("fileid") is not None:
+                found = pcloud.code_for_fileid(pkg["fileid"], file_codes)
+                if found:
+                    pkg["code"] = found
 
     result: dict[str, Any] = {"name": name}
 
@@ -640,6 +687,31 @@ def dump_latest(data: dict[str, Any]) -> str:
     return json.dumps(data, indent=2, ensure_ascii=False) + "\n"
 
 
+def previous_app_entry(prev: dict[str, Any] | None, app_id: str) -> dict[str, Any] | None:
+    if not prev:
+        return None
+    entry = (prev.get("apps") or {}).get(app_id)
+    return entry if isinstance(entry, dict) else None
+
+
+def has_platform_entries(entry: dict[str, Any] | None) -> bool:
+    if not entry:
+        return False
+    return bool(entry.get("android") or entry.get("windows"))
+
+
+def alias_entry(entry: dict[str, Any], alias: str, app_id: str) -> dict[str, Any]:
+    out = json.loads(json.dumps(entry))
+    pretty = alias.replace("-", " ").title()
+    if alias == "zombie-smash":
+        pretty = "Zombie Smash"
+    elif alias == "neon-maze":
+        pretty = "Neon Maze"
+    out["name"] = pretty
+    out["shared_with"] = app_id
+    return out
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate latest.json from pCloud public links.")
     parser.add_argument("--config", default=str(ROOT / "config.json"))
@@ -662,20 +734,21 @@ def main() -> int:
     pcloud = PCloud(auth)
     apps_out: dict[str, Any] = {}
     for app in config.get("apps") or []:
-        log(f"Processing {app.get('name')} ({app.get('id')})...")
-        entry = process_app(app, pcloud, prev)
-        apps_out[app["id"]] = entry
+        app_id = app["id"]
+        log(f"Processing {app.get('name')} ({app_id})...")
+        try:
+            entry = process_app(app, pcloud, prev)
+            if not has_platform_entries(entry) and has_platform_entries(previous_app_entry(prev, app_id)):
+                raise RuntimeError("no current packages found")
+        except Exception as exc:  # noqa: BLE001
+            log(f"{app.get('name')}: failed ({exc}). Keeping the previous entry.")
+            entry = previous_app_entry(prev, app_id)
+            if not entry:
+                log(f"{app.get('name')}: no previous entry to keep.")
+                continue
+        apps_out[app_id] = entry
         for alias in app.get("aliases") or []:
-            alias_entry = json.loads(json.dumps(entry))
-            # Keep a stable name per alias so a game can look itself up.
-            pretty = alias.replace("-", " ").title()
-            if alias == "zombie-smash":
-                pretty = "Zombie Smash"
-            elif alias == "neon-maze":
-                pretty = "Neon Maze"
-            alias_entry["name"] = pretty
-            alias_entry["shared_with"] = app["id"]
-            apps_out[alias] = alias_entry
+            apps_out[alias] = alias_entry(entry, alias, app_id)
 
     # Keep the previous generated time (and skip the commit) when app data is unchanged.
     prev_apps = (prev or {}).get("apps")

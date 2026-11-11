@@ -25,7 +25,7 @@ Edit `config.json`:
 - `folder_code` — the pCloud **folder** share code (best). The script then always picks the newest APK and newest Windows installer in that folder.
 - `file_codes` — existing pCloud **file** share codes, used as stable download URLs when they still point at the current file.
 - `folder_names` — optional names used to find a folder if you add pCloud credentials (see below).
-- `direct` — a regular https URL (used for the games APK hosted on 80sretrocar.com).
+- `direct` — a regular https URL, for a file that is not on a pCloud share.
 
 ## Optional GitHub secrets
 

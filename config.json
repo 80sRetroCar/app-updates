@@ -13,7 +13,6 @@
       "name": "Retro Notes",
       "folder_code": "kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V",
       "file_codes": [
-        "XZfXouJZOQ9KlBNz5FBTytd7l33BS84VgVt7",
         "XZkrcuJZ961EWLxAGjbaco8c22ibd7UVhKrX"
       ]
     },
@@ -29,10 +28,7 @@
     {
       "id": "retrolevel",
       "name": "RetroLevel",
-      "folder_code": "kZBwxjJZkB3tQjaYDtbxM0vyN89sbB8zWJak",
-      "file_codes": [
-        "XZfvcuJZePMam08qbp4bT506p7bzoYSckJNX"
-      ]
+      "folder_code": "kZBwxjJZkB3tQjaYDtbxM0vyN89sbB8zWJak"
     },
     {
       "id": "retro-grid",
@@ -66,12 +62,9 @@
         "zombie-smash",
         "neon-maze"
       ],
-      "direct": {
-        "android": {
-          "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
-          "filename": "80sRetroCarGames.apk"
-        }
-      }
+      "file_codes": [
+        "XZ1BouJZ7GblOyIEtDfAVeVSvrqd6Hupcp2V"
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T23:09:40Z",
+  "generated": "2026-11-11T23:37:01Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -61,13 +61,13 @@
     "retrolevel": {
       "name": "RetroLevel",
       "android": {
-        "version": "1.1.7",
-        "url": "https://u.pcloud.link/publink/show?code=XZfvcuJZePMam08qbp4bT506p7bzoYSckJNX",
-        "updated": "2026-11-11T20:47:27Z",
-        "filename": "RetroLevel-v1.1.7.apk",
-        "size": 101377,
+        "version": "1.1.8",
+        "url": "https://u.pcloud.link/publink/show?code=kZBwxjJZkB3tQjaYDtbxM0vyN89sbB8zWJak",
+        "updated": "2026-11-11T23:28:21Z",
+        "filename": "RetroLevel-v1.1.8.apk",
+        "size": 101581,
         "version_source": "filename",
-        "url_source": "file_publink"
+        "url_source": "folder_publink"
       },
       "folder_url": "https://u.pcloud.link/publink/show?code=kZBwxjJZkB3tQjaYDtbxM0vyN89sbB8zWJak"
     },
@@ -110,24 +110,24 @@
       "name": "80s Retro Car Games",
       "android": {
         "version": "1.22",
-        "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
-        "updated": "2026-11-11T22:53:10Z",
+        "url": "https://u.pcloud.link/publink/show?code=XZ1BouJZ7GblOyIEtDfAVeVSvrqd6Hupcp2V",
+        "updated": "2026-11-02T21:23:29Z",
         "filename": "80sRetroCarGames.apk",
         "size": 7558300,
         "version_source": "apk_manifest",
-        "url_source": "direct"
+        "url_source": "file_publink"
       }
     },
     "zombie-smash": {
       "name": "Zombie Smash",
       "android": {
         "version": "1.22",
-        "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
-        "updated": "2026-11-11T22:53:10Z",
+        "url": "https://u.pcloud.link/publink/show?code=XZ1BouJZ7GblOyIEtDfAVeVSvrqd6Hupcp2V",
+        "updated": "2026-11-02T21:23:29Z",
         "filename": "80sRetroCarGames.apk",
         "size": 7558300,
         "version_source": "apk_manifest",
-        "url_source": "direct"
+        "url_source": "file_publink"
       },
       "shared_with": "80s-retro-car-games"
     },
@@ -135,12 +135,12 @@
       "name": "Neon Maze",
       "android": {
         "version": "1.22",
-        "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
-        "updated": "2026-11-11T22:53:10Z",
+        "url": "https://u.pcloud.link/publink/show?code=XZ1BouJZ7GblOyIEtDfAVeVSvrqd6Hupcp2V",
+        "updated": "2026-11-02T21:23:29Z",
         "filename": "80sRetroCarGames.apk",
         "size": 7558300,
         "version_source": "apk_manifest",
-        "url_source": "direct"
+        "url_source": "file_publink"
       },
       "shared_with": "80s-retro-car-games"
     }
