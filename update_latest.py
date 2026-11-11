@@ -677,13 +677,14 @@ def main() -> int:
             alias_entry["shared_with"] = app["id"]
             apps_out[alias] = alias_entry
 
-    latest = {"generated": now_iso(), "apps": apps_out}
-    text = dump_latest(latest)
-    if output_path.exists() and output_path.read_text(encoding="utf-8") == text:
+    # Keep the previous generated time (and skip the commit) when app data is unchanged.
+    prev_apps = (prev or {}).get("apps")
+    if prev_apps == apps_out and output_path.exists():
         log("latest.json unchanged.")
-    else:
-        output_path.write_text(text, encoding="utf-8")
-        log(f"Wrote {output_path}")
+        return 0
+    latest = {"generated": now_iso(), "apps": apps_out}
+    output_path.write_text(dump_latest(latest), encoding="utf-8")
+    log(f"Wrote {output_path}")
     return 0
 
 
