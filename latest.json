@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T23:09:21Z",
+  "generated": "2026-11-11T23:09:40Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -103,7 +103,8 @@
         "size": 205329,
         "version_source": "filename",
         "url_source": "file_publink"
-      }
+      },
+      "folder_url": "https://u.pcloud.link/publink/show?code=kZPbouJZezut7jKgbKVrG5rydo71ApzgtNAk"
     },
     "80s-retro-car-games": {
       "name": "80s Retro Car Games",
