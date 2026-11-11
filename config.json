@@ -37,16 +37,23 @@
     {
       "id": "retro-grid",
       "name": "Retro Grid",
-      "folder_names": ["Retro Grid", "RetroGrid"],
+      "folder_names": [
+        "Retro Grid",
+        "RetroGrid"
+      ],
       "file_codes": [
         "XZvccuJZCDiEgjrPc8pmLRtwcLd95S6wdQY7",
         "XZercuJZo5BICc3DLVmy8jgA36AkQp9zMt6k"
-      ]
+      ],
+      "folder_code": "kZ9oOjJZb6hj9XMVNr0RTAkxp38N104v6UbX"
     },
     {
       "id": "retroride",
       "name": "RetroRide",
-      "folder_names": ["RetroRide", "Retro Ride"],
+      "folder_names": [
+        "RetroRide",
+        "Retro Ride"
+      ],
       "file_codes": [
         "XZTFouJZOoi3fukvIn5gk2UXeHBufjzB74dy"
       ]
@@ -54,7 +61,10 @@
     {
       "id": "80s-retro-car-games",
       "name": "80s Retro Car Games",
-      "aliases": ["zombie-smash", "neon-maze"],
+      "aliases": [
+        "zombie-smash",
+        "neon-maze"
+      ],
       "direct": {
         "android": {
           "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
