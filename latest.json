@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T23:39:02Z",
+  "generated": "2026-11-11T23:54:41Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -27,12 +27,12 @@
       },
       "windows": {
         "version": "2.4.2",
-        "url": "https://u.pcloud.link/publink/show?code=kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V",
+        "url": "https://u.pcloud.link/publink/show?code=XZXYouJZFfcuFbB1pOhMdTmS8io2i0u96kEy",
         "updated": "2026-11-11T22:56:24Z",
         "filename": "RetroNotes-Windows-v2.4.2.exe",
         "size": 12544512,
         "version_source": "filename",
-        "url_source": "folder_publink"
+        "url_source": "file_publink"
       },
       "folder_url": "https://u.pcloud.link/publink/show?code=kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V"
     },
@@ -62,12 +62,12 @@
       "name": "RetroLevel",
       "android": {
         "version": "1.1.8",
-        "url": "https://u.pcloud.link/publink/show?code=kZBwxjJZkB3tQjaYDtbxM0vyN89sbB8zWJak",
+        "url": "https://u.pcloud.link/publink/show?code=XZOWouJZEKrqvnjyMl0vnyG0ShOfpRh8JEm7",
         "updated": "2026-11-11T23:28:21Z",
         "filename": "RetroLevel-v1.1.8.apk",
         "size": 101581,
         "version_source": "filename",
-        "url_source": "folder_publink"
+        "url_source": "file_publink"
       },
       "folder_url": "https://u.pcloud.link/publink/show?code=kZBwxjJZkB3tQjaYDtbxM0vyN89sbB8zWJak"
     },
