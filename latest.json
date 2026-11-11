@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T22:42:55Z",
+  "generated": "2026-11-11T23:09:21Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -26,13 +26,13 @@
         "url_source": "file_publink"
       },
       "windows": {
-        "version": "2.4.1",
-        "url": "https://u.pcloud.link/publink/show?code=XZfXouJZOQ9KlBNz5FBTytd7l33BS84VgVt7",
-        "updated": "2026-11-11T22:03:01Z",
-        "filename": "RetroNotes-Windows-v2.4.1.exe",
-        "size": 12535808,
+        "version": "2.4.2",
+        "url": "https://u.pcloud.link/publink/show?code=kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V",
+        "updated": "2026-11-11T22:56:24Z",
+        "filename": "RetroNotes-Windows-v2.4.2.exe",
+        "size": 12544512,
         "version_source": "filename",
-        "url_source": "file_publink"
+        "url_source": "folder_publink"
       },
       "folder_url": "https://u.pcloud.link/publink/show?code=kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V"
     },
@@ -90,7 +90,8 @@
         "size": 75963525,
         "version_source": "filename",
         "url_source": "file_publink"
-      }
+      },
+      "folder_url": "https://u.pcloud.link/publink/show?code=kZ9oOjJZb6hj9XMVNr0RTAkxp38N104v6UbX"
     },
     "retroride": {
       "name": "RetroRide",
@@ -109,7 +110,7 @@
       "android": {
         "version": "1.22",
         "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
-        "updated": "2026-11-08T00:27:09Z",
+        "updated": "2026-11-11T22:53:10Z",
         "filename": "80sRetroCarGames.apk",
         "size": 7558300,
         "version_source": "apk_manifest",
@@ -121,7 +122,7 @@
       "android": {
         "version": "1.22",
         "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
-        "updated": "2026-11-08T00:27:09Z",
+        "updated": "2026-11-11T22:53:10Z",
         "filename": "80sRetroCarGames.apk",
         "size": 7558300,
         "version_source": "apk_manifest",
@@ -134,7 +135,7 @@
       "android": {
         "version": "1.22",
         "url": "https://80sretrocar.com/Software/80sRetroCarGames.apk",
-        "updated": "2026-11-08T00:27:09Z",
+        "updated": "2026-11-11T22:53:10Z",
         "filename": "80sRetroCarGames.apk",
         "size": 7558300,
         "version_source": "apk_manifest",
