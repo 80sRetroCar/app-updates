@@ -64,6 +64,11 @@
       ],
       "file_codes": [
         "XZ1BouJZ7GblOyIEtDfAVeVSvrqd6Hupcp2V"
+      ],
+      "folder_code": "kZMeouJZoOqMvxhy0r7ExQbhKVnDmhytnSzX",
+      "folder_recurse": false,
+      "file_patterns": [
+        "*RetroCarGames*.apk"
       ]
     }
   ]

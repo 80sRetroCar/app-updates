@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T23:37:01Z",
+  "generated": "2026-11-11T23:39:02Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -116,7 +116,8 @@
         "size": 7558300,
         "version_source": "apk_manifest",
         "url_source": "file_publink"
-      }
+      },
+      "folder_url": "https://u.pcloud.link/publink/show?code=kZMeouJZoOqMvxhy0r7ExQbhKVnDmhytnSzX"
     },
     "zombie-smash": {
       "name": "Zombie Smash",
@@ -129,6 +130,7 @@
         "version_source": "apk_manifest",
         "url_source": "file_publink"
       },
+      "folder_url": "https://u.pcloud.link/publink/show?code=kZMeouJZoOqMvxhy0r7ExQbhKVnDmhytnSzX",
       "shared_with": "80s-retro-car-games"
     },
     "neon-maze": {
@@ -142,6 +144,7 @@
         "version_source": "apk_manifest",
         "url_source": "file_publink"
       },
+      "folder_url": "https://u.pcloud.link/publink/show?code=kZMeouJZoOqMvxhy0r7ExQbhKVnDmhytnSzX",
       "shared_with": "80s-retro-car-games"
     }
   }

@@ -11,6 +11,7 @@ Do not put secrets in this repo. Read them from the environment.
 from __future__ import annotations
 
 import argparse
+import fnmatch
 import json
 import os
 import re
@@ -157,14 +158,10 @@ def is_windows(name: str) -> bool:
     return (name or "").lower().endswith(WINDOWS_SUFFIXES)
 
 
-def walk_files(meta: dict[str, Any]) -> list[dict[str, Any]]:
+def walk_files(meta: dict[str, Any], recurse: bool = True) -> list[dict[str, Any]]:
     found: list[dict[str, Any]] = []
 
-    def walk(item: dict[str, Any]) -> None:
-        if item.get("isfolder"):
-            for child in item.get("contents") or []:
-                walk(child)
-            return
+    def add_file(item: dict[str, Any]) -> None:
         name = item.get("name") or ""
         found.append(
             {
@@ -176,8 +173,25 @@ def walk_files(meta: dict[str, Any]) -> list[dict[str, Any]]:
             }
         )
 
+    def walk(item: dict[str, Any]) -> None:
+        if item.get("isfolder"):
+            for child in item.get("contents") or []:
+                if child.get("isfolder"):
+                    if recurse:
+                        walk(child)
+                    continue
+                add_file(child)
+            return
+        add_file(item)
+
     walk(meta)
     return found
+
+
+def name_matches(name: str, patterns: list[str] | None) -> bool:
+    if not patterns:
+        return True
+    return any(fnmatch.fnmatch(name, pat) for pat in patterns)
 
 
 def show_publink(code: str) -> dict[str, Any]:
@@ -607,6 +621,13 @@ def process_app(app: dict[str, Any], pcloud: PCloud, prev: dict[str, Any] | None
             folder_code = discovered
             log(f"{name}: discovered folder publink via API")
 
+    recurse = app.get("folder_recurse", True)
+    if isinstance(recurse, str):
+        recurse = recurse.strip().lower() not in {"0", "false", "no"}
+    else:
+        recurse = bool(recurse)
+    patterns = [p for p in (app.get("file_patterns") or []) if p]
+
     packages: list[dict[str, Any]] = []
     folder_ok = False
     if folder_code:
@@ -614,8 +635,9 @@ def process_app(app: dict[str, Any], pcloud: PCloud, prev: dict[str, Any] | None
             shown = show_publink(folder_code)
             packages.extend(
                 f
-                for f in walk_files(shown.get("metadata") or {})
-                if is_android(f["name"]) or is_windows(f["name"])
+                for f in walk_files(shown.get("metadata") or {}, recurse=recurse)
+                if (is_android(f["name"]) or is_windows(f["name"]))
+                and name_matches(f["name"], patterns)
             )
             folder_ok = True
         except Exception as exc:  # noqa: BLE001
