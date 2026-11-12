@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T02:21:17Z",
+  "generated": "2026-11-12T22:15:51Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -96,13 +96,13 @@
     "retroride": {
       "name": "RetroRide",
       "android": {
-        "version": "1.0.3",
-        "url": "https://u.pcloud.link/publink/show?code=XZTFouJZOoi3fukvIn5gk2UXeHBufjzB74dy",
-        "updated": "2026-11-11T22:29:39Z",
-        "filename": "RetroRide-v1.0.3.apk",
-        "size": 205329,
+        "version": "1.0.7",
+        "url": "https://u.pcloud.link/publink/show?code=kZPbouJZezut7jKgbKVrG5rydo71ApzgtNAk",
+        "updated": "2026-11-12T22:10:55Z",
+        "filename": "RetroRide-v1.0.7.apk",
+        "size": 387465,
         "version_source": "filename",
-        "url_source": "file_publink"
+        "url_source": "folder_publink"
       },
       "folder_url": "https://u.pcloud.link/publink/show?code=kZPbouJZezut7jKgbKVrG5rydo71ApzgtNAk"
     },
