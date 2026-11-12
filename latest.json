@@ -1,38 +1,38 @@
 {
-  "generated": "2026-11-11T23:54:41Z",
+  "generated": "2026-11-12T00:18:39Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
       "android": {
-        "version": "2.6.17",
-        "url": "https://u.pcloud.link/publink/show?code=XZP3cuJZgOcxc8kFqPmhr4z3Jsyj2brWMwcV",
-        "updated": "2026-11-11T20:32:52Z",
-        "filename": "ValiantArcade.apk",
-        "size": 18622713,
-        "version_source": "apk_manifest",
-        "url_source": "file_publink"
+        "version": "2.6.18",
+        "url": "https://u.pcloud.link/publink/show?code=kZ5hWjJZngIhJQd8nwBUu3wMHQ3e4zSo0YuV",
+        "updated": "2026-11-12T00:14:21Z",
+        "filename": "ValiantArcade-v2.6.18.apk",
+        "size": 18623041,
+        "version_source": "filename",
+        "url_source": "folder_publink"
       },
       "folder_url": "https://u.pcloud.link/publink/show?code=kZ5hWjJZngIhJQd8nwBUu3wMHQ3e4zSo0YuV"
     },
     "retro-notes": {
       "name": "Retro Notes",
       "android": {
-        "version": "2.2.2",
-        "url": "https://u.pcloud.link/publink/show?code=XZkrcuJZ961EWLxAGjbaco8c22ibd7UVhKrX",
-        "updated": "2026-11-11T21:04:18Z",
-        "filename": "RetroNotes-v2.2.2.apk",
-        "size": 260947,
+        "version": "2.2.3",
+        "url": "https://u.pcloud.link/publink/show?code=kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V",
+        "updated": "2026-11-12T00:08:41Z",
+        "filename": "RetroNotes-v2.2.3.apk",
+        "size": 261703,
         "version_source": "filename",
-        "url_source": "file_publink"
+        "url_source": "folder_publink"
       },
       "windows": {
-        "version": "2.4.2",
-        "url": "https://u.pcloud.link/publink/show?code=XZXYouJZFfcuFbB1pOhMdTmS8io2i0u96kEy",
-        "updated": "2026-11-11T22:56:24Z",
-        "filename": "RetroNotes-Windows-v2.4.2.exe",
-        "size": 12544512,
+        "version": "2.4.4",
+        "url": "https://u.pcloud.link/publink/show?code=kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V",
+        "updated": "2026-11-12T00:10:36Z",
+        "filename": "RetroNotes-Windows-v2.4.4.exe",
+        "size": 12424704,
         "version_source": "filename",
-        "url_source": "file_publink"
+        "url_source": "folder_publink"
       },
       "folder_url": "https://u.pcloud.link/publink/show?code=kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V"
     },
