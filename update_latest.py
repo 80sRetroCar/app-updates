@@ -28,6 +28,9 @@ from typing import Any
 
 API_HOST = (os.environ.get("PCLOUD_API_HOST") or "api.pcloud.com").strip() or "api.pcloud.com"
 PUBLINK_PAGE = "https://u.pcloud.link/publink/show?code={code}"
+# In-app Download buttons open this page, which resolves the newest file
+# from the app's stable pCloud folder publink (file codes die on replace).
+SITE_DOWNLOAD = "https://80sretrocar.com/download.html?app={app}&kind={kind}"
 
 ANDROID_SUFFIXES = (".apk",)
 WINDOWS_SUFFIXES = (".exe", ".msi", ".msix", ".appx")
@@ -525,6 +528,8 @@ def build_platform_entry(
     extra_codes: list[str],
     prev_entry: dict[str, Any] | None,
     direct_url: str | None = None,
+    app_id: str | None = None,
+    platform: str | None = None,
 ) -> dict[str, Any]:
     fileid = pkg.get("fileid")
     code = pkg.get("code") or pcloud.code_for_fileid(fileid, extra_codes)
@@ -532,11 +537,19 @@ def build_platform_entry(
         code = pcloud.ensure_file_publink(fileid)
 
     # getpublinkdownload URLs include an expires timestamp (typically hours),
-    # so they are never stored in latest.json. A still-valid file publink page
-    # is best; otherwise the folder publink page, which stays stable.
+    # so they are never stored in latest.json.
+    #
+    # File publink codes die when a file is replaced (pCloud 7002). The page
+    # share codes Bryan used to update by hand can also lag behind a newer
+    # file already in the folder. The site resolver at download.html always
+    # picks the newest matching file from the stable folder publink, so the
+    # in-app Download button keeps working after a drop-in upload.
     if direct_url:
         url = direct_url
         url_source = "direct"
+    elif app_id and platform:
+        url = SITE_DOWNLOAD.format(app=app_id, kind=platform)
+        url_source = "site_resolver"
     elif code:
         url = PUBLINK_PAGE.format(code=code)
         url_source = "file_publink"
@@ -607,7 +620,7 @@ def build_direct_android(direct: dict[str, Any], prev_entry: dict[str, Any] | No
 
 
 def codes_from_page(url: str) -> list[str]:
-    """Share codes linked from the app's web page (Bryan updates these on each release)."""
+    """Share codes linked from the app's web page (used only to attach a file code; the feed URL is the site resolver)."""
     import urllib.request
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120"})
     html = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "ignore")
@@ -691,6 +704,8 @@ def process_app(app: dict[str, Any], pcloud: PCloud, prev: dict[str, Any] | None
                 folder_code,
                 file_codes,
                 previous_platform(prev, app_id, "android"),
+                app_id=app_id,
+                platform="android",
             )
 
     if direct.get("windows"):
@@ -707,6 +722,8 @@ def process_app(app: dict[str, Any], pcloud: PCloud, prev: dict[str, Any] | None
                 folder_code,
                 file_codes,
                 previous_platform(prev, app_id, "windows"),
+                app_id=app_id,
+                platform="windows",
             )
 
     if folder_code:

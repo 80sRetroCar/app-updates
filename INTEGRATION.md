@@ -34,12 +34,12 @@ Example shape:
       "name": "Retro Notes",
       "android": {
         "version": "2.2.2",
-        "url": "https://u.pcloud.link/publink/show?code=...",
+        "url": "https://80sretrocar.com/download.html?app=retro-notes&kind=android",
         "updated": "2026-11-11T21:04:18Z"
       },
       "windows": {
         "version": "2.4.1",
-        "url": "https://u.pcloud.link/publink/show?code=...",
+        "url": "https://80sretrocar.com/download.html?app=retro-notes&kind=windows",
         "updated": "2026-11-11T22:03:01Z"
       }
     }
@@ -54,7 +54,7 @@ There may be extra fields (`filename`, `size`, `version_source`). You only need 
 1. Check on launch. Store the last-check time and do not check again until 24 hours have passed. A hidden “Check for updates” button can ignore that limit.
 2. Read `apps["your-key"].android` on Android, or `.windows` on Windows. If that object is missing, do nothing.
 3. Compare the remote `version` to the app’s own version with a **semantic** (numeric) compare: `2.6.17` is newer than `2.6.9`, and `2.3` is treated as `2.3.0`. Ignore a leading `v`. A suffix like `-build4` is only a tie-breaker after the numeric part.
-4. If the remote version is newer **and** `url` starts with `https://`, show a dialog titled **Update available**, with a short message and a **Download** button that opens `url` (the system browser). Include a **Later** / dismiss button. Never auto-download or auto-install.
+4. If the remote version is newer **and** `url` starts with `https://`, show a dialog titled **Update available**, with a short message and a **Download** button that opens `url` (the system browser). That URL is a small page on 80sretrocar.com which starts the download of the newest file in the app’s folder. Include a **Later** / dismiss button. Never auto-download or auto-install.
 5. If `version_source` is `"modified"`, the file name had no version and the value is a date like `2026.11.11`. You can still compare it, but it is better to name uploads `App-v1.2.3.apk`.
 
 Apps that already read a Firebase `latest.json` (`versionName`, `whats_new`) need a one-time change: point at this URL and read `apps[key].android.version` instead of `android.versionName`.
