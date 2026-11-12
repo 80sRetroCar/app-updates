@@ -606,11 +606,30 @@ def build_direct_android(direct: dict[str, Any], prev_entry: dict[str, Any] | No
     }
 
 
+def codes_from_page(url: str) -> list[str]:
+    """Share codes linked from the app's web page (Bryan updates these on each release)."""
+    import urllib.request
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120"})
+    html = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "ignore")
+    seen: list[str] = []
+    for c in re.findall(r"code=([A-Za-z0-9]+)", html):
+        if c not in seen:
+            seen.append(c)
+    return seen
+
+
 def process_app(app: dict[str, Any], pcloud: PCloud, prev: dict[str, Any] | None) -> dict[str, Any]:
     app_id = app["id"]
     name = app["name"]
     folder_code = (app.get("folder_code") or "").strip() or None
     file_codes = [c for c in (app.get("file_codes") or []) if c]
+    page = (app.get("page") or "").strip()
+    if page:
+        try:
+            page_codes = [c for c in codes_from_page(page) if c != app.get("folder_code")]
+            file_codes = page_codes + [c for c in file_codes if c not in page_codes]
+        except Exception as exc:  # noqa: BLE001
+            log(f"{name}: page {page} failed: {exc}")
     folder_names = list(app.get("folder_names") or [])
     if name and name not in folder_names:
         folder_names.append(name)

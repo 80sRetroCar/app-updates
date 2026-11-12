@@ -1,16 +1,16 @@
 {
-  "generated": "2026-11-12T02:12:03Z",
+  "generated": "2026-11-12T02:21:17Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
       "android": {
         "version": "2.6.18",
-        "url": "https://u.pcloud.link/publink/show?code=kZ5hWjJZngIhJQd8nwBUu3wMHQ3e4zSo0YuV",
+        "url": "https://u.pcloud.link/publink/show?code=XZ9xouJZtgffzILdlQLdVwiOES0MVXhrMaiV",
         "updated": "2026-11-12T00:14:21Z",
         "filename": "ValiantArcade-v2.6.18.apk",
         "size": 18623041,
         "version_source": "filename",
-        "url_source": "folder_publink"
+        "url_source": "file_publink"
       },
       "folder_url": "https://u.pcloud.link/publink/show?code=kZ5hWjJZngIhJQd8nwBUu3wMHQ3e4zSo0YuV"
     },
@@ -18,21 +18,21 @@
       "name": "Retro Notes",
       "android": {
         "version": "2.2.3",
-        "url": "https://u.pcloud.link/publink/show?code=kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V",
+        "url": "https://u.pcloud.link/publink/show?code=XZSCouJZCve4T4fqIRVKYvzqEF2wlhYUGerk",
         "updated": "2026-11-12T00:08:41Z",
         "filename": "RetroNotes-v2.2.3.apk",
         "size": 261703,
         "version_source": "filename",
-        "url_source": "folder_publink"
+        "url_source": "file_publink"
       },
       "windows": {
         "version": "2.4.6",
-        "url": "https://u.pcloud.link/publink/show?code=kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V",
+        "url": "https://u.pcloud.link/publink/show?code=XZADyfJZJhgGrcUplE0wj2nlRzhxi8PPNh6y",
         "updated": "2026-11-12T01:44:39Z",
         "filename": "RetroNotes-Windows-v2.4.6.exe",
         "size": 12438528,
         "version_source": "filename",
-        "url_source": "folder_publink"
+        "url_source": "file_publink"
       },
       "folder_url": "https://u.pcloud.link/publink/show?code=kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V"
     },
@@ -75,21 +75,21 @@
       "name": "Retro Grid",
       "android": {
         "version": "2.4.2",
-        "url": "https://u.pcloud.link/publink/show?code=kZ9oOjJZb6hj9XMVNr0RTAkxp38N104v6UbX",
+        "url": "https://u.pcloud.link/publink/show?code=XZuOyfJZ5lXo2XPDSokHWKss3WlC6FV0Pom7",
         "updated": "2026-11-12T02:02:22Z",
         "filename": "RetroGrid-v2.4.2.apk",
         "size": 4565959,
         "version_source": "filename",
-        "url_source": "folder_publink"
+        "url_source": "file_publink"
       },
       "windows": {
         "version": "2.4.1",
-        "url": "https://u.pcloud.link/publink/show?code=kZ9oOjJZb6hj9XMVNr0RTAkxp38N104v6UbX",
+        "url": "https://u.pcloud.link/publink/show?code=XZPaouJZ2ojOa8OUs85CQLnD3qukHbBdFk17",
         "updated": "2026-11-12T01:01:27Z",
         "filename": "RetroGrid-Windows-v2.4.1-Setup.exe",
         "size": 75964413,
         "version_source": "filename",
-        "url_source": "folder_publink"
+        "url_source": "file_publink"
       },
       "folder_url": "https://u.pcloud.link/publink/show?code=kZ9oOjJZb6hj9XMVNr0RTAkxp38N104v6UbX"
     },

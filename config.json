@@ -6,7 +6,8 @@
       "folder_code": "kZ5hWjJZngIhJQd8nwBUu3wMHQ3e4zSo0YuV",
       "file_codes": [
         "XZP3cuJZgOcxc8kFqPmhr4z3Jsyj2brWMwcV"
-      ]
+      ],
+      "page": "https://80sretrocar.com/Software/Valiant-Arcade/valiant-arcade.html"
     },
     {
       "id": "retro-notes",
@@ -15,7 +16,8 @@
       "file_codes": [
         "XZkrcuJZ961EWLxAGjbaco8c22ibd7UVhKrX",
         "XZXYouJZFfcuFbB1pOhMdTmS8io2i0u96kEy"
-      ]
+      ],
+      "page": "https://80sretrocar.com/Software/Retro-Notes/retro-notes.html"
     },
     {
       "id": "retrodrop",
@@ -24,7 +26,8 @@
       "file_codes": [
         "XZe4UjJZ1TVjqEYeLQROkHvUfUWn0JGMamJ7",
         "XZmGyjJZatkSA7834D5uT7zLo626FbwSpnkV"
-      ]
+      ],
+      "page": "https://80sretrocar.com/Software/Retro-Drop/retro-drop.html"
     },
     {
       "id": "retrolevel",
@@ -32,7 +35,8 @@
       "folder_code": "kZBwxjJZkB3tQjaYDtbxM0vyN89sbB8zWJak",
       "file_codes": [
         "XZOWouJZEKrqvnjyMl0vnyG0ShOfpRh8JEm7"
-      ]
+      ],
+      "page": "https://80sretrocar.com/Software/RetroLevel/retrolevel.html"
     },
     {
       "id": "retro-grid",
@@ -45,7 +49,8 @@
         "XZvccuJZCDiEgjrPc8pmLRtwcLd95S6wdQY7",
         "XZercuJZo5BICc3DLVmy8jgA36AkQp9zMt6k"
       ],
-      "folder_code": "kZ9oOjJZb6hj9XMVNr0RTAkxp38N104v6UbX"
+      "folder_code": "kZ9oOjJZb6hj9XMVNr0RTAkxp38N104v6UbX",
+      "page": "https://80sretrocar.com/Software/Retro-Grid/retro-grid.html"
     },
     {
       "id": "retroride",
@@ -57,7 +62,8 @@
       "file_codes": [
         "XZTFouJZOoi3fukvIn5gk2UXeHBufjzB74dy"
       ],
-      "folder_code": "kZPbouJZezut7jKgbKVrG5rydo71ApzgtNAk"
+      "folder_code": "kZPbouJZezut7jKgbKVrG5rydo71ApzgtNAk",
+      "page": "https://80sretrocar.com/Software/RetroRide/retroride.html"
     },
     {
       "id": "80s-retro-car-games",
@@ -73,7 +79,8 @@
       "folder_recurse": false,
       "file_patterns": [
         "*RetroCarGames*.apk"
-      ]
+      ],
+      "page": "https://80sretrocar.com/Software/Neon-Maze/neon-maze.html"
     }
   ]
 }
