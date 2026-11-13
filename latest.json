@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T01:41:56Z",
+  "generated": "2026-11-13T03:47:38Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -37,20 +37,20 @@
     "retrodrop": {
       "name": "RetroDrop",
       "android": {
-        "version": "1.3.0",
+        "version": "1.3.1-build6",
         "url": "https://80sretrocar.com/download.html?app=retrodrop&kind=android",
-        "updated": "2026-11-13T00:50:35Z",
-        "filename": "RetroDrop-v1.3.0.apk",
-        "size": 55057,
+        "updated": "2026-11-13T03:32:29Z",
+        "filename": "RetroDrop-v1.3.1-build6.apk",
+        "size": 55649,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "1.2.0",
+        "version": "1.2.1",
         "url": "https://80sretrocar.com/download.html?app=retrodrop&kind=windows",
-        "updated": "2026-11-13T00:54:24Z",
-        "filename": "RetroDrop-Windows-v1.2.0.exe",
-        "size": 303104,
+        "updated": "2026-11-13T03:33:56Z",
+        "filename": "RetroDrop-Windows-v1.2.1.exe",
+        "size": 305664,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -58,11 +58,11 @@
     "retrolevel": {
       "name": "RetroLevel",
       "android": {
-        "version": "1.1.8",
+        "version": "1.1.9",
         "url": "https://80sretrocar.com/download.html?app=retrolevel&kind=android",
-        "updated": "2026-11-13T00:52:20Z",
-        "filename": "RetroLevel-v1.1.8.apk",
-        "size": 101581,
+        "updated": "2026-11-13T03:35:42Z",
+        "filename": "RetroLevel-v1.1.9-donate.apk",
+        "size": 101765,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -70,20 +70,20 @@
     "retro-grid": {
       "name": "Retro Grid",
       "android": {
-        "version": "2.4.2",
+        "version": "2.4.3",
         "url": "https://80sretrocar.com/download.html?app=retro-grid&kind=android",
-        "updated": "2026-11-13T00:50:48Z",
-        "filename": "RetroGrid-v2.4.2.apk",
-        "size": 4565959,
+        "updated": "2026-11-13T03:05:34Z",
+        "filename": "RetroGrid-v2.4.3.apk",
+        "size": 4566070,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "2.4.2",
+        "version": "2.4.3",
         "url": "https://80sretrocar.com/download.html?app=retro-grid&kind=windows",
-        "updated": "2026-11-13T00:54:49Z",
-        "filename": "RetroGrid-Windows-v2.4.2-Setup.exe",
-        "size": 75965429,
+        "updated": "2026-11-13T03:29:31Z",
+        "filename": "RetroGrid-Windows-v2.4.3-Setup.exe",
+        "size": 75965486,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -91,11 +91,11 @@
     "retroride": {
       "name": "RetroRide",
       "android": {
-        "version": "1.0.7",
+        "version": "1.0.8",
         "url": "https://80sretrocar.com/download.html?app=retroride&kind=android",
-        "updated": "2026-11-13T00:53:17Z",
-        "filename": "RetroRide-v1.0.7.apk",
-        "size": 387465,
+        "updated": "2026-11-13T03:38:26Z",
+        "filename": "RetroRide-v1.0.8.apk",
+        "size": 388165,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -141,20 +141,20 @@
     "retro-locker": {
       "name": "Retro Locker",
       "android": {
-        "version": "1.4.3",
+        "version": "1.4.5",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=android",
-        "updated": "2026-11-13T01:30:02Z",
-        "filename": "RetroLocker-v1.4.3.apk",
-        "size": 3497358,
+        "updated": "2026-11-13T03:18:33Z",
+        "filename": "RetroLocker-v1.4.5.apk",
+        "size": 3497914,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "1.0.6",
+        "version": "1.0.7",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=windows",
-        "updated": "2026-11-13T01:41:19Z",
-        "filename": "RetroLocker-Windows-v1.0.6.exe",
-        "size": 494080,
+        "updated": "2026-11-13T03:18:07Z",
+        "filename": "RetroLocker-Windows-v1.0.7.exe",
+        "size": 496128,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
