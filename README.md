@@ -35,13 +35,12 @@ If `latest.php` cannot be read (404, the host is not running PHP yet, or the bod
 | `80s-retro-car-games` (aliases `zombie-smash`, `neon-maze`) | `Software/Neon-Maze` **and** `Software/Zombie-Smash` |
 | `retro-locker` | `Software/RetroLocker` |
 | `retrolauncher` | `Software/RetroLauncher` |
-| `retrosaver` | `Software/RetroSaver` |
-| `good-lord` | `Software/Good-Lord` |
-| `skyroogle` | `Software/Skyroogle` |
 
 Neon Maze and Zombie Smash share one APK, named like `80sRetroCarGames-v1.23.apk`. Upload it to either folder (Neon-Maze is the recommended home). Both download links look in both folders and pick the newest, so you only upload it once.
 
-Coming Soon apps appear in `latest.json` only after a file is in their folder.
+Coming Soon apps that are **not finished** (RetroSaver; Good Lord, What Did You Eat?; The Adventures of Skyroogle) are excluded from `latest.php` and from this feed, even if a file is already in their folder. They stay on the Coming Soon page with no download button.
+
+RetroLauncher and Retro Locker are still Coming Soon on the website (no download buttons) but their folders are scanned, so a file there can appear in the feed once uploaded.
 
 ## Adding an app
 
