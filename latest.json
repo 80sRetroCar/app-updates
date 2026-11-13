@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T23:36:00Z",
+  "generated": "2026-11-13T23:48:39Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -91,11 +91,11 @@
     "retroride": {
       "name": "RetroRide",
       "android": {
-        "version": "1.0.8",
+        "version": "1.0.9",
         "url": "https://80sretrocar.com/download.html?app=retroride&kind=android",
-        "updated": "2026-11-13T03:38:26Z",
-        "filename": "RetroRide-v1.0.8.apk",
-        "size": 388165,
+        "updated": "2026-11-13T23:44:50Z",
+        "filename": "RetroRide-v1.0.9.apk",
+        "size": 390321,
         "version_source": "filename",
         "url_source": "site_resolver"
       }

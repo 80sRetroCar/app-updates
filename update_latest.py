@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import os
 import sys
 import urllib.error
@@ -55,18 +56,28 @@ def looks_like_php(text: str) -> bool:
 
 def fetch_manifest(url: str) -> dict[str, Any] | None:
     """Return the parsed manifest, or None if it cannot be used."""
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "80sRetroCar-app-updates/2.0",
-            "Accept": "application/json, text/plain, */*",
-        },
-    )
+    headers = {
+        "User-Agent": "80sRetroCar-app-updates/2.0",
+        "Accept": "application/json, text/plain, */*",
+    }
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            status = getattr(resp, "status", 200)
-            raw = resp.read()
-            ctype = (resp.headers.get("Content-Type") or "").lower()
+        for attempt in range(2):
+            req = urllib.request.Request(url, headers=headers)
+            try:
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    status = getattr(resp, "status", 200)
+                    raw = resp.read()
+                    ctype = (resp.headers.get("Content-Type") or "").lower()
+                break
+            except urllib.error.HTTPError as exc:
+                # The host sometimes answers with a 409 "are you human" page that
+                # just sets a cookie and reloads. Set that cookie and try once more.
+                body = exc.read().decode("utf-8", "replace") if exc.code == 409 else ""
+                m = re.search(r'document\.cookie\s*=\s*"([^"=;]+=[^";]*)', body)
+                if attempt == 0 and m:
+                    headers["Cookie"] = m.group(1)
+                    continue
+                raise
     except urllib.error.HTTPError as exc:
         log(f"manifest {url} HTTP {exc.code}: {exc.reason}. Keeping previous entries.")
         return None
