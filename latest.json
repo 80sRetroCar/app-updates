@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T22:38:54Z",
+  "generated": "2026-11-13T23:36:00Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -115,24 +115,24 @@
     "zombie-smash": {
       "name": "Zombie Smash",
       "android": {
-        "version": "1.22",
-        "url": "https://80sretrocar.com/download.html?app=80s-retro-car-games&kind=android",
-        "updated": "2026-11-02T21:23:29Z",
-        "filename": "80sRetroCarGames.apk",
-        "size": 7558300,
-        "version_source": "apk_manifest",
+        "version": "2.3",
+        "url": "https://80sretrocar.com/download.html?app=zombie-smash&kind=android",
+        "updated": "2026-11-13T03:54:13Z",
+        "filename": "ZombieSmash-v2.3.apk",
+        "size": 3048343,
+        "version_source": "filename",
         "url_source": "site_resolver"
       }
     },
     "neon-maze": {
       "name": "Neon Maze",
       "android": {
-        "version": "1.22",
-        "url": "https://80sretrocar.com/download.html?app=80s-retro-car-games&kind=android",
-        "updated": "2026-11-02T21:23:29Z",
-        "filename": "80sRetroCarGames.apk",
-        "size": 7558300,
-        "version_source": "apk_manifest",
+        "version": "1.2",
+        "url": "https://80sretrocar.com/download.html?app=neon-maze&kind=android",
+        "updated": "2026-11-13T03:54:29Z",
+        "filename": "NeonMazeCruiser-v1.2.apk",
+        "size": 529241,
+        "version_source": "filename",
         "url_source": "site_resolver"
       }
     },
