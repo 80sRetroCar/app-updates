@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T03:47:38Z",
+  "generated": "2026-11-13T04:52:25Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -16,20 +16,20 @@
     "retro-notes": {
       "name": "Retro Notes",
       "android": {
-        "version": "2.3.2",
+        "version": "2.3.3",
         "url": "https://80sretrocar.com/download.html?app=retro-notes&kind=android",
-        "updated": "2026-11-13T00:53:02Z",
-        "filename": "RetroNotes-v2.3.2.apk",
-        "size": 275691,
+        "updated": "2026-11-13T03:49:25Z",
+        "filename": "RetroNotes-v2.3.3.apk",
+        "size": 275799,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "2.4.14",
+        "version": "3.0.0",
         "url": "https://80sretrocar.com/download.html?app=retro-notes&kind=windows",
-        "updated": "2026-11-13T00:55:30Z",
-        "filename": "RetroNotes-Windows-v2.4.14.exe",
-        "size": 12642816,
+        "updated": "2026-11-13T03:49:44Z",
+        "filename": "RetroNotes-Windows-v3.0.0-beta3.exe",
+        "size": 13838848,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -122,8 +122,7 @@
         "size": 7558300,
         "version_source": "apk_manifest",
         "url_source": "site_resolver"
-      },
-      "shared_with": "80s-retro-car-games"
+      }
     },
     "neon-maze": {
       "name": "Neon Maze",
@@ -135,8 +134,7 @@
         "size": 7558300,
         "version_source": "apk_manifest",
         "url_source": "site_resolver"
-      },
-      "shared_with": "80s-retro-car-games"
+      }
     },
     "retro-locker": {
       "name": "Retro Locker",
@@ -162,12 +160,12 @@
     "retrolauncher": {
       "name": "RetroLauncher",
       "windows": {
-        "version": "1.0.1",
+        "version": "2026.11.13",
         "url": "https://80sretrocar.com/download.html?app=retrolauncher&kind=windows",
-        "updated": "2026-11-13T00:55:00Z",
-        "filename": "RetroLauncher-Windows-v1.0.1.exe",
+        "updated": "2026-11-13T04:15:59Z",
+        "filename": "RetroLauncher.exe",
         "size": 485444,
-        "version_source": "filename",
+        "version_source": "modified",
         "url_source": "site_resolver"
       }
     }
