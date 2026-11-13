@@ -12,39 +12,37 @@ How to hook an app up: see [INTEGRATION.md](INTEGRATION.md).
 
 ## After you upload a new file
 
-1. Upload the new APK or EXE to that app’s existing pCloud folder.
+1. Upload the new APK or EXE to that app’s folder on the website, for example `Software/Retro-Drop/RetroDrop-v1.3.0.apk`.
 2. Put the version in the filename, like `RetroNotes-v2.2.3.apk` or `RetroNotes-Windows-v2.4.2.exe`.
-3. This repo checks pCloud every 30 minutes (or run **Actions → Update latest.json → Run workflow**) and updates `latest.json` only when something changed.
+3. This repo reads `https://80sretrocar.com/latest.php` every 30 minutes (or run **Actions → Update latest.json → Run workflow**) and updates `latest.json` only when something changed.
 
-You do **not** have to edit this repo, and you do **not** have to change the website, for a normal release. The Download button on the site and the in-app update link both resolve the newest file from that folder. Replacing a file deletes its pCloud file share, but the folder share never changes.
+You do **not** have to edit this repo, and you do **not** have to change the website, for a normal release. The Download button and the in-app update link both resolve the newest file in that folder.
 
-Each platform entry’s `url` is `https://80sretrocar.com/download.html?app=<key>&kind=android` (or `windows`). That page starts the download of the newest matching file.
+Each platform entry’s `url` is `https://80sretrocar.com/download.html?app=<key>&kind=android` (or `windows`). That page redirects to `download.php`, which starts the download of the newest matching file.
+
+If `latest.php` cannot be read (404, the host is not running PHP yet, or the body is not JSON), this script keeps the last known `latest.json` and does not fail the job.
+
+## Folder mapping
+
+| Key | Folder(s) on the site |
+| --- | --- |
+| `valiant-arcade` | `Software/Valiant-Arcade` |
+| `retro-notes` | `Software/Retro-Notes` |
+| `retrodrop` | `Software/Retro-Drop` |
+| `retrolevel` | `Software/RetroLevel` |
+| `retro-grid` | `Software/Retro-Grid` |
+| `retroride` | `Software/RetroRide` |
+| `80s-retro-car-games` (aliases `zombie-smash`, `neon-maze`) | `Software/Neon-Maze` **and** `Software/Zombie-Smash` |
+| `retro-locker` | `Software/RetroLocker` |
+| `retrolauncher` | `Software/RetroLauncher` |
+| `retrosaver` | `Software/RetroSaver` |
+| `good-lord` | `Software/Good-Lord` |
+| `skyroogle` | `Software/Skyroogle` |
+
+Neon Maze and Zombie Smash share one APK, named like `80sRetroCarGames-v1.23.apk`. Upload it to either folder (Neon-Maze is the recommended home). Both download links look in both folders and pick the newest, so you only upload it once.
+
+Coming Soon apps appear in `latest.json` only after a file is in their folder.
 
 ## Adding an app
 
-Edit `config.json`:
-
-- `folder_code` — the pCloud **folder** share code (best). The script then always picks the newest APK and newest Windows installer in that folder.
-- `file_codes` — optional existing pCloud **file** share codes. The feed no longer depends on these for the download URL.
-- `folder_names` — optional names used to find a folder if you add pCloud credentials (see below).
-- `folder_recurse` — set to `false` to look only at the folder’s top level (used for the games APK in the site folder, so other apps’ files are ignored).
-- `file_patterns` — optional filename globs, like `*RetroCarGames*.apk`, to keep only matching packages.
-- `direct` — a regular https URL, for a file that is not on a pCloud share.
-
-## Optional GitHub secrets
-
-`latest.json` and `config.json` only contain public share links. No passwords belong in this repo.
-
-If you add these Actions secrets (the same values already used by the private `download-report` repo), the job can:
-
-- find a folder by name when `folder_code` is missing
-- reuse an existing file share instead of making a new one
-- create a file share **only** when a newly uploaded APK/EXE has no public link yet
-
-| Secret | Required? |
-| --- | --- |
-| `PCLOUD_AUTH_TOKEN` | Preferred. Token from `login?getauth=1`. |
-| `PCLOUD_USERNAME` / `PCLOUD_PASSWORD` | Fallback if there is no token. |
-| `PCLOUD_API_HOST` | Optional. Defaults to `api.pcloud.com`. |
-
-Without those secrets, the script still works for every app that already has a folder share in `config.json`. New uploads in a folder are detected automatically; the download URL is always the site resolver, which picks the newest file from that folder.
+Edit `config.json` and add a matching key to the whitelist in `releases.php` on the website (folder paths are hardcoded there for safety).

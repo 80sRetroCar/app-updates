@@ -1,86 +1,81 @@
 {
+  "manifest_url": "https://80sretrocar.com/latest.php",
+  "download_url": "https://80sretrocar.com/download.html?app={app}&kind={kind}",
   "apps": [
     {
       "id": "valiant-arcade",
       "name": "Valiant Arcade",
-      "folder_code": "kZ5hWjJZngIhJQd8nwBUu3wMHQ3e4zSo0YuV",
-      "file_codes": [
-        "XZP3cuJZgOcxc8kFqPmhr4z3Jsyj2brWMwcV"
-      ],
+      "folders": ["Software/Valiant-Arcade"],
       "page": "https://80sretrocar.com/Software/Valiant-Arcade/valiant-arcade.html"
     },
     {
       "id": "retro-notes",
       "name": "Retro Notes",
-      "folder_code": "kZKA2jJZl9e7BQtXDzHD3SkfXWCu15Fw1P6V",
-      "file_codes": [
-        "XZkrcuJZ961EWLxAGjbaco8c22ibd7UVhKrX",
-        "XZXYouJZFfcuFbB1pOhMdTmS8io2i0u96kEy"
-      ],
+      "folders": ["Software/Retro-Notes"],
       "page": "https://80sretrocar.com/Software/Retro-Notes/retro-notes.html"
     },
     {
       "id": "retrodrop",
       "name": "RetroDrop",
-      "folder_code": "kZaA2jJZucSM9dWv5CmU27V4kAzIAJIGBFrV",
-      "file_codes": [
-        "XZe4UjJZ1TVjqEYeLQROkHvUfUWn0JGMamJ7",
-        "XZmGyjJZatkSA7834D5uT7zLo626FbwSpnkV"
-      ],
+      "folders": ["Software/Retro-Drop"],
       "page": "https://80sretrocar.com/Software/Retro-Drop/retro-drop.html"
     },
     {
       "id": "retrolevel",
       "name": "RetroLevel",
-      "folder_code": "kZBwxjJZkB3tQjaYDtbxM0vyN89sbB8zWJak",
-      "file_codes": [
-        "XZOWouJZEKrqvnjyMl0vnyG0ShOfpRh8JEm7"
-      ],
+      "folders": ["Software/RetroLevel"],
       "page": "https://80sretrocar.com/Software/RetroLevel/retrolevel.html"
     },
     {
       "id": "retro-grid",
       "name": "Retro Grid",
-      "folder_names": [
-        "Retro Grid",
-        "RetroGrid"
-      ],
-      "file_codes": [
-        "XZvccuJZCDiEgjrPc8pmLRtwcLd95S6wdQY7",
-        "XZercuJZo5BICc3DLVmy8jgA36AkQp9zMt6k"
-      ],
-      "folder_code": "kZ9oOjJZb6hj9XMVNr0RTAkxp38N104v6UbX",
+      "folders": ["Software/Retro-Grid"],
       "page": "https://80sretrocar.com/Software/Retro-Grid/retro-grid.html"
     },
     {
       "id": "retroride",
       "name": "RetroRide",
-      "folder_names": [
-        "RetroRide",
-        "Retro Ride"
-      ],
-      "file_codes": [
-        "XZTFouJZOoi3fukvIn5gk2UXeHBufjzB74dy"
-      ],
-      "folder_code": "kZPbouJZezut7jKgbKVrG5rydo71ApzgtNAk",
+      "folders": ["Software/RetroRide"],
       "page": "https://80sretrocar.com/Software/RetroRide/retroride.html"
     },
     {
       "id": "80s-retro-car-games",
       "name": "80s Retro Car Games",
-      "aliases": [
-        "zombie-smash",
-        "neon-maze"
-      ],
-      "file_codes": [
-        "XZ1BouJZ7GblOyIEtDfAVeVSvrqd6Hupcp2V"
-      ],
-      "folder_code": "kZMeouJZoOqMvxhy0r7ExQbhKVnDmhytnSzX",
-      "folder_recurse": false,
-      "file_patterns": [
-        "*RetroCarGames*.apk"
-      ],
-      "page": "https://80sretrocar.com/Software/Neon-Maze/neon-maze.html"
+      "aliases": ["zombie-smash", "neon-maze"],
+      "folders": ["Software/Neon-Maze", "Software/Zombie-Smash"],
+      "file_patterns": ["*RetroCarGames*.apk"],
+      "page": "https://80sretrocar.com/Software/Neon-Maze/neon-maze.html",
+      "note": "Neon Maze and Zombie Smash share one APK. Upload 80sRetroCarGames-vX.Y.apk to either folder (Neon-Maze recommended). Both keys look in both folders and pick the newest."
+    },
+    {
+      "id": "retro-locker",
+      "name": "Retro Locker",
+      "folders": ["Software/RetroLocker"],
+      "page": "https://80sretrocar.com/Software/RetroLocker/retrolocker.html"
+    },
+    {
+      "id": "retrolauncher",
+      "name": "RetroLauncher",
+      "folders": ["Software/RetroLauncher"],
+      "page": "https://80sretrocar.com/Software/RetroLauncher/retrolauncher.html"
+    },
+    {
+      "id": "retrosaver",
+      "name": "RetroSaver",
+      "folders": ["Software/RetroSaver"],
+      "page": "https://80sretrocar.com/Software/RetroSaver/retrosaver.html"
+    },
+    {
+      "id": "good-lord",
+      "name": "Good Lord, What Did You Eat?",
+      "folders": ["Software/Good-Lord"],
+      "page": "https://80sretrocar.com/Software/Good-Lord/good-lord.html"
+    },
+    {
+      "id": "skyroogle",
+      "name": "The Adventures of Skyroogle",
+      "folders": ["Software/Skyroogle"],
+      "page": "https://80sretrocar.com/Software/Skyroogle/the-adventures-of-skyroogle.html"
     }
   ]
 }
