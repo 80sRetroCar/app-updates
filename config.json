@@ -53,10 +53,6 @@
     {
       "id": "80s-retro-car-games",
       "name": "80s Retro Car Games",
-      "aliases": [
-        "zombie-smash",
-        "neon-maze"
-      ],
       "folders": [
         "Software/Neon-Maze",
         "Software/Zombie-Smash"
@@ -65,7 +61,29 @@
         "*RetroCarGames*.apk"
       ],
       "page": "https://80sretrocar.com/Software/Neon-Maze/neon-maze.html",
-      "note": "Neon Maze and Zombie Smash share one APK. Upload 80sRetroCarGames-vX.Y.apk to either folder (Neon-Maze recommended). Both keys look in both folders and pick the newest."
+      "note": "Legacy combined pack. Neon Maze and Zombie Smash are now separate apps."
+    },
+    {
+      "id": "zombie-smash",
+      "name": "Zombie Smash",
+      "folders": [
+        "Software/Zombie-Smash"
+      ],
+      "file_patterns": [
+        "*.apk"
+      ],
+      "page": "https://80sretrocar.com/Software/Zombie-Smash/zombie-smash.html"
+    },
+    {
+      "id": "neon-maze",
+      "name": "Neon Maze",
+      "folders": [
+        "Software/Neon-Maze"
+      ],
+      "file_patterns": [
+        "*.apk"
+      ],
+      "page": "https://80sretrocar.com/Software/Neon-Maze/neon-maze.html"
     },
     {
       "id": "retro-locker",
