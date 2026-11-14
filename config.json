@@ -86,6 +86,14 @@
       "page": "https://80sretrocar.com/Software/Neon-Maze/neon-maze.html"
     },
     {
+      "id": "retrosaver",
+      "name": "RetroSaver",
+      "folders": [
+        "Software/RetroSaver"
+      ],
+      "page": "https://80sretrocar.com/Software/RetroSaver/retrosaver.html"
+    },
+    {
       "id": "retro-locker",
       "name": "Retro Locker",
       "folders": [
