@@ -102,6 +102,15 @@
       "page": "https://80sretrocar.com/Software/RetroLocker/retrolocker.html"
     },
     {
+      "id": "retrolocker",
+      "name": "Retro Locker",
+      "folders": [
+        "Software/RetroLocker"
+      ],
+      "page": "https://80sretrocar.com/Software/RetroLocker/retrolocker.html",
+      "note": "Key the Retro Locker apps (Android and Windows) read for update checks. Same files as retro-locker."
+    },
+    {
       "id": "retrolauncher",
       "name": "RetroLauncher",
       "folders": [
