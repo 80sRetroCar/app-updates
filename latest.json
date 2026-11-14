@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T23:48:39Z",
+  "generated": "2026-11-14T00:28:10Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -132,6 +132,27 @@
         "updated": "2026-11-13T03:54:29Z",
         "filename": "NeonMazeCruiser-v1.2.apk",
         "size": 529241,
+        "version_source": "filename",
+        "url_source": "site_resolver"
+      }
+    },
+    "retrosaver": {
+      "name": "RetroSaver",
+      "android": {
+        "version": "1.2.1",
+        "url": "https://80sretrocar.com/download.html?app=retrosaver&kind=android",
+        "updated": "2026-11-13T23:57:09Z",
+        "filename": "RetroSaver-v1.2.1.apk",
+        "size": 284013,
+        "version_source": "filename",
+        "url_source": "site_resolver"
+      },
+      "windows": {
+        "version": "1.1.5",
+        "url": "https://80sretrocar.com/download.html?app=retrosaver&kind=windows",
+        "updated": "2026-11-13T23:57:07Z",
+        "filename": "RetroSaver-Windows-v1.1.5.exe",
+        "size": 12050432,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
