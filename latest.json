@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14T03:41:25Z",
+  "generated": "2026-11-14T04:45:51Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -160,20 +160,20 @@
     "retro-locker": {
       "name": "Retro Locker",
       "android": {
-        "version": "1.4.9",
+        "version": "1.5.3",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=android",
-        "updated": "2026-11-14T03:24:03Z",
-        "filename": "RetroLocker-v1.4.9.apk",
-        "size": 3897569,
+        "updated": "2026-11-14T04:33:55Z",
+        "filename": "RetroLocker-v1.5.3.apk",
+        "size": 3902609,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "1.0.17",
+        "version": "1.0.21",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=windows",
-        "updated": "2026-11-14T03:24:27Z",
-        "filename": "RetroLocker-Windows-Setup-v1.0.17.exe",
-        "size": 653299,
+        "updated": "2026-11-14T04:33:57Z",
+        "filename": "RetroLocker-Windows-Setup-v1.0.21.exe",
+        "size": 658282,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -181,20 +181,20 @@
     "retrolocker": {
       "name": "Retro Locker",
       "android": {
-        "version": "1.4.9",
+        "version": "1.5.3",
         "url": "https://80sretrocar.com/download.html?app=retrolocker&kind=android",
-        "updated": "2026-11-14T03:24:03Z",
-        "filename": "RetroLocker-v1.4.9.apk",
-        "size": 3897569,
+        "updated": "2026-11-14T04:33:55Z",
+        "filename": "RetroLocker-v1.5.3.apk",
+        "size": 3902609,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "1.0.17",
+        "version": "1.0.21",
         "url": "https://80sretrocar.com/download.html?app=retrolocker&kind=windows",
-        "updated": "2026-11-14T03:24:27Z",
-        "filename": "RetroLocker-Windows-Setup-v1.0.17.exe",
-        "size": 653299,
+        "updated": "2026-11-14T04:33:57Z",
+        "filename": "RetroLocker-Windows-Setup-v1.0.21.exe",
+        "size": 658282,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
