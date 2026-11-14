@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14T00:28:10Z",
+  "generated": "2026-11-14T00:47:54Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -169,11 +169,11 @@
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "1.0.7",
+        "version": "1.0.13",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=windows",
-        "updated": "2026-11-13T03:18:07Z",
-        "filename": "RetroLocker-Windows-v1.0.7.exe",
-        "size": 496128,
+        "updated": "2026-11-14T00:39:39Z",
+        "filename": "RetroLocker-Windows-Setup-v1.0.13.exe",
+        "size": 624604,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
