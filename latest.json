@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T03:46:44Z",
+  "generated": "2026-11-15T04:49:06Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -160,11 +160,11 @@
     "retro-locker": {
       "name": "Retro Locker",
       "android": {
-        "version": "1.5.12",
+        "version": "1.5.13",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=android",
-        "updated": "2026-11-15T03:00:29Z",
-        "filename": "RetroLocker-v1.5.12.apk",
-        "size": 3925417,
+        "updated": "2026-11-15T04:02:35Z",
+        "filename": "RetroLocker-v1.5.13.apk",
+        "size": 3927429,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
@@ -181,11 +181,11 @@
     "retrolocker": {
       "name": "Retro Locker",
       "android": {
-        "version": "1.5.12",
+        "version": "1.5.13",
         "url": "https://80sretrocar.com/download.html?app=retrolocker&kind=android",
-        "updated": "2026-11-15T03:00:29Z",
-        "filename": "RetroLocker-v1.5.12.apk",
-        "size": 3925417,
+        "updated": "2026-11-15T04:02:35Z",
+        "filename": "RetroLocker-v1.5.13.apk",
+        "size": 3927429,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
