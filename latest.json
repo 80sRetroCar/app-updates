@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T01:43:16Z",
+  "generated": "2026-11-15T03:46:44Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -139,11 +139,11 @@
     "retrosaver": {
       "name": "RetroSaver",
       "android": {
-        "version": "1.2.1",
+        "version": "1.2.2",
         "url": "https://80sretrocar.com/download.html?app=retrosaver&kind=android",
-        "updated": "2026-11-13T23:57:09Z",
-        "filename": "RetroSaver-v1.2.1.apk",
-        "size": 284013,
+        "updated": "2026-11-15T03:33:41Z",
+        "filename": "RetroSaver-v1.2.2.apk",
+        "size": 286341,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
@@ -160,20 +160,20 @@
     "retro-locker": {
       "name": "Retro Locker",
       "android": {
-        "version": "1.5.10",
+        "version": "1.5.12",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=android",
-        "updated": "2026-11-14T16:26:45Z",
-        "filename": "RetroLocker-v1.5.10.apk",
-        "size": 3919353,
+        "updated": "2026-11-15T03:00:29Z",
+        "filename": "RetroLocker-v1.5.12.apk",
+        "size": 3925417,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "1.0.26",
+        "version": "1.0.28",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=windows",
-        "updated": "2026-11-14T15:31:42Z",
-        "filename": "RetroLocker-Windows-Setup-v1.0.26.exe",
-        "size": 663074,
+        "updated": "2026-11-15T03:00:33Z",
+        "filename": "RetroLocker-Windows Portable-v1.0.28.exe",
+        "size": 667648,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -181,20 +181,20 @@
     "retrolocker": {
       "name": "Retro Locker",
       "android": {
-        "version": "1.5.10",
+        "version": "1.5.12",
         "url": "https://80sretrocar.com/download.html?app=retrolocker&kind=android",
-        "updated": "2026-11-14T16:26:45Z",
-        "filename": "RetroLocker-v1.5.10.apk",
-        "size": 3919353,
+        "updated": "2026-11-15T03:00:29Z",
+        "filename": "RetroLocker-v1.5.12.apk",
+        "size": 3925417,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "1.0.26",
+        "version": "1.0.28",
         "url": "https://80sretrocar.com/download.html?app=retrolocker&kind=windows",
-        "updated": "2026-11-14T15:31:42Z",
-        "filename": "RetroLocker-Windows-Setup-v1.0.26.exe",
-        "size": 663074,
+        "updated": "2026-11-15T03:00:33Z",
+        "filename": "RetroLocker-Windows Portable-v1.0.28.exe",
+        "size": 667648,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
