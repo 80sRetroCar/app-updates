@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T04:49:06Z",
+  "generated": "2026-11-21T02:06:57Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -14,7 +14,7 @@
       }
     },
     "retro-notes": {
-      "name": "Retro Notes",
+      "name": "StickySync",
       "android": {
         "version": "2.3.3",
         "url": "https://80sretrocar.com/download.html?app=retro-notes&kind=android",
@@ -35,7 +35,7 @@
       }
     },
     "retrodrop": {
-      "name": "RetroDrop",
+      "name": "SmartShare",
       "android": {
         "version": "1.3.1-build6",
         "url": "https://80sretrocar.com/download.html?app=retrodrop&kind=android",
@@ -56,7 +56,7 @@
       }
     },
     "retrolevel": {
-      "name": "RetroLevel",
+      "name": "AudioAnchor",
       "android": {
         "version": "1.1.9",
         "url": "https://80sretrocar.com/download.html?app=retrolevel&kind=android",
@@ -68,7 +68,7 @@
       }
     },
     "retro-grid": {
-      "name": "Retro Grid",
+      "name": "SheetScribe",
       "android": {
         "version": "2.4.3",
         "url": "https://80sretrocar.com/download.html?app=retro-grid&kind=android",
@@ -89,7 +89,7 @@
       }
     },
     "retroride": {
-      "name": "RetroRide",
+      "name": "MileMeter",
       "android": {
         "version": "1.0.9",
         "url": "https://80sretrocar.com/download.html?app=retroride&kind=android",
@@ -137,7 +137,7 @@
       }
     },
     "retrosaver": {
-      "name": "RetroSaver",
+      "name": "PassPal",
       "android": {
         "version": "1.2.2",
         "url": "https://80sretrocar.com/download.html?app=retrosaver&kind=android",
@@ -158,7 +158,7 @@
       }
     },
     "retro-locker": {
-      "name": "Retro Locker",
+      "name": "FileFetcher",
       "android": {
         "version": "1.5.13",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=android",
@@ -179,7 +179,7 @@
       }
     },
     "retrolocker": {
-      "name": "Retro Locker",
+      "name": "FileFetcher",
       "android": {
         "version": "1.5.13",
         "url": "https://80sretrocar.com/download.html?app=retrolocker&kind=android",
