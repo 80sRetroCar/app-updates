@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T13:53:24Z",
+  "generated": "2026-11-21T15:39:24Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -70,20 +70,20 @@
     "retro-grid": {
       "name": "SheetScribe",
       "android": {
-        "version": "2.6.6",
+        "version": "2.6.8",
         "url": "https://80sretrocar.com/download.html?app=retro-grid&kind=android",
-        "updated": "2026-11-21T13:40:32Z",
-        "filename": "SheetScribe-v2.6.6.apk",
-        "size": 5572176,
+        "updated": "2026-11-21T14:48:25Z",
+        "filename": "SheetScribe-v2.6.8.apk",
+        "size": 5579833,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "2.6.6",
+        "version": "2.6.8",
         "url": "https://80sretrocar.com/download.html?app=retro-grid&kind=windows",
-        "updated": "2026-11-21T13:45:54Z",
-        "filename": "SheetScribe-Windows-v2.6.6-Setup.exe",
-        "size": 76716620,
+        "updated": "2026-11-21T14:47:51Z",
+        "filename": "SheetScribe-Windows-v2.6.8-Setup.exe",
+        "size": 76720276,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
