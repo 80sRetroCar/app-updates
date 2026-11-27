@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T15:39:24Z",
+  "generated": "2026-11-27T03:54:17Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -16,20 +16,20 @@
     "retro-notes": {
       "name": "StickySync",
       "android": {
-        "version": "2.4.6",
+        "version": "2.4.7",
         "url": "https://80sretrocar.com/download.html?app=retro-notes&kind=android",
-        "updated": "2026-11-21T13:41:09Z",
-        "filename": "StickySync-v2.4.6.apk",
-        "size": 216635,
+        "updated": "2026-11-27T03:27:59Z",
+        "filename": "StickySync-v2.4.7.apk",
+        "size": 217559,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "3.1.8",
+        "version": "3.1.9",
         "url": "https://80sretrocar.com/download.html?app=retro-notes&kind=windows",
-        "updated": "2026-11-21T13:46:25Z",
-        "filename": "StickySync-Windows-v3.1.8-Setup.exe",
-        "size": 4554991,
+        "updated": "2026-11-27T03:28:05Z",
+        "filename": "StickySync-Windows-v3.1.9-Setup.exe",
+        "size": 4561131,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -70,20 +70,20 @@
     "retro-grid": {
       "name": "SheetScribe",
       "android": {
-        "version": "2.6.8",
+        "version": "2.6.9",
         "url": "https://80sretrocar.com/download.html?app=retro-grid&kind=android",
-        "updated": "2026-11-21T14:48:25Z",
-        "filename": "SheetScribe-v2.6.8.apk",
-        "size": 5579833,
+        "updated": "2026-11-27T03:51:12Z",
+        "filename": "SheetScribe-2.6.9.apk",
+        "size": 5585383,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "2.6.8",
+        "version": "2.6.9",
         "url": "https://80sretrocar.com/download.html?app=retro-grid&kind=windows",
-        "updated": "2026-11-21T14:47:51Z",
-        "filename": "SheetScribe-Windows-v2.6.8-Setup.exe",
-        "size": 76720276,
+        "updated": "2026-11-27T03:51:45Z",
+        "filename": "SheetScribe-Setup-2.6.9.exe",
+        "size": 76724558,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -91,11 +91,11 @@
     "retroride": {
       "name": "MileMeter",
       "android": {
-        "version": "1.1.2",
+        "version": "1.1.4",
         "url": "https://80sretrocar.com/download.html?app=retroride&kind=android",
-        "updated": "2026-11-21T13:39:28Z",
-        "filename": "MileMeter-v1.1.2.apk",
-        "size": 565233,
+        "updated": "2026-11-27T02:45:30Z",
+        "filename": "MileMeter-v1.1.4.apk",
+        "size": 757541,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -160,20 +160,20 @@
     "retro-locker": {
       "name": "FileFetcher",
       "android": {
-        "version": "1.5.15",
+        "version": "1.5.16",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=android",
-        "updated": "2026-11-21T13:38:50Z",
-        "filename": "FileFetcher-v1.5.15.apk",
-        "size": 3955653,
+        "updated": "2026-11-27T03:18:58Z",
+        "filename": "FileFetcher-v1.5.16.apk",
+        "size": 3955885,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "1.0.33",
+        "version": "1.0.35",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=windows",
-        "updated": "2026-11-21T13:44:42Z",
-        "filename": "FileFetcher-Windows-Setup-v1.0.33.exe",
-        "size": 706566,
+        "updated": "2026-11-27T03:36:57Z",
+        "filename": "FileFetcher-Windows-Setup-v1.0.35.exe",
+        "size": 715269,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -181,20 +181,20 @@
     "retrolocker": {
       "name": "FileFetcher",
       "android": {
-        "version": "1.5.15",
+        "version": "1.5.16",
         "url": "https://80sretrocar.com/download.html?app=retrolocker&kind=android",
-        "updated": "2026-11-21T13:38:50Z",
-        "filename": "FileFetcher-v1.5.15.apk",
-        "size": 3955653,
+        "updated": "2026-11-27T03:18:58Z",
+        "filename": "FileFetcher-v1.5.16.apk",
+        "size": 3955885,
         "version_source": "filename",
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "1.0.33",
+        "version": "1.0.35",
         "url": "https://80sretrocar.com/download.html?app=retrolocker&kind=windows",
-        "updated": "2026-11-21T13:44:42Z",
-        "filename": "FileFetcher-Windows-Setup-v1.0.33.exe",
-        "size": 706566,
+        "updated": "2026-11-27T03:36:57Z",
+        "filename": "FileFetcher-Windows-Setup-v1.0.35.exe",
+        "size": 715269,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
