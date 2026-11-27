@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T03:54:17Z",
+  "generated": "2026-11-27T13:50:16Z",
   "apps": {
     "valiant-arcade": {
       "name": "Valiant Arcade",
@@ -169,11 +169,11 @@
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "1.0.35",
+        "version": "1.0.38",
         "url": "https://80sretrocar.com/download.html?app=retro-locker&kind=windows",
-        "updated": "2026-11-27T03:36:57Z",
-        "filename": "FileFetcher-Windows-Setup-v1.0.35.exe",
-        "size": 715269,
+        "updated": "2026-11-27T13:19:18Z",
+        "filename": "FileFetcher-Windows-Setup-v1.0.38.exe",
+        "size": 736021,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
@@ -190,11 +190,11 @@
         "url_source": "site_resolver"
       },
       "windows": {
-        "version": "1.0.35",
+        "version": "1.0.38",
         "url": "https://80sretrocar.com/download.html?app=retrolocker&kind=windows",
-        "updated": "2026-11-27T03:36:57Z",
-        "filename": "FileFetcher-Windows-Setup-v1.0.35.exe",
-        "size": 715269,
+        "updated": "2026-11-27T13:19:18Z",
+        "filename": "FileFetcher-Windows-Setup-v1.0.38.exe",
+        "size": 736021,
         "version_source": "filename",
         "url_source": "site_resolver"
       }
